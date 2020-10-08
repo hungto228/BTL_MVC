@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEBMAKET", "WEBMAKET\WEBMAKET.csproj", "{7495D59A-4D35-4571-8742-461505BD29A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7495D59A-4D35-4571-8742-461505BD29A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7495D59A-4D35-4571-8742-461505BD29A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7495D59A-4D35-4571-8742-461505BD29A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7495D59A-4D35-4571-8742-461505BD29A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F6EBAED-9A35-4648-9D7A-40E44E6BDCD8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,63 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .na {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+    <title>@Page.Title</title>
+    @RenderSection("head", required: false)
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse" style="">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Web bán hàng phantom</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Thể loại", "Index", "Users", null, new { @class = "ht" })</li>
+                <li>
+                    @if (Session["u_id"] != null)
+                    {
+                        @Html.ActionLink("Đăng quảng cáo", "CreateAd", "Users", null, new { @class = "ht" })
+
+                    }
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    @if (Session["u_id"] == null)
+                    {
+
+                        @Html.ActionLink("Đăng nhập", "Login", "Users", null, new { @class = "ht", })
+
+                    }
+                </li>
+                <li>
+                    @if (Session["u_id"] == null)
+                    {
+                        @Html.ActionLink("Đăng ký", "SignUp", "Users", null, new { @class = "ht" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Đăng xuất", "Signout", "Users", null, new { @class = "ht" })
+                    }
+
+                <li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    @RenderBody()
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>
